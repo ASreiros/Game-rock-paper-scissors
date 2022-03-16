@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="./css/home.css">
+    <title>Rock paper scissors</title>
+</head>
+<body>
+    <section class="game-section">
+            <h1 class="firsttext">Rock paper scissors game</h1>
+            <h2 class="secondtext">Rules of the game</h2>
+            <p class="thirdtext">Press start to play. Choose your sign form the dropdown menu. Information window will let you know if you won. Click ok and pick new sign. The goal of the game is to have most wins in a row before you will lose. </p>
+        <div class="button-holder">
+            <button id="bbs">Start</button>
+            <button class="noshow" id="bbc">Clear</button>
+            <div class="selector-holder">
+                <div>
+                    <button class="sign sign-rock" ></button>
+                    <button class="sign sign-scissors" ></button>
+                    <button class="sign sign-paper" ></button>
+                    <button class="noshow" id="bbok">OK</button>
+                </div>   
+                <p class="anounce">You won 0 times in a row</p>
+            </div>
+
+        </div>
+        <div class="box-holder">
+            <div id = "left-box" class = "box left-box">
+                <img id="lhand" src="./img/Rock L.png" alt="closehand">
+            </div>
+            <div id = "right-box" class = "box right-box">
+                <img id="rhand"  src="./img/Rock R.png" alt="closehand">
+            </div>
+        </div>
+ 
+        <div class="message-screen-holder">
+            <h3 class ="message-screen">Press start to play</h3>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+        <button class="bbcr">Clear results</button>
+    </section>
+</body>
+</html>

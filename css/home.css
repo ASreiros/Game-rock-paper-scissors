@@ -1,0 +1,241 @@
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.game-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;  
+    min-height: 70vh;
+  }
+  
+  .firsttext{
+      font-size: 50px;
+      margin-bottom: 10px;
+  }
+  
+  .secondtext{
+      font-size: 25px;
+  }
+  
+  .thirdtext{
+      font-size: 16px;
+      margin: 10px; 
+  }
+   
+  
+  .box-holder{
+      width:80vw;
+      min-width: 600px;
+      min-height: 200px;
+      background-color: rgb(145, 209, 71);
+  }
+
+
+  .button-holder{
+    width:80vw;
+    min-width: 600px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+  .selector-holder{
+    width:80vw;
+    min-width: 600px;
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    }
+
+    .selector-holder > div{
+        display: flex;
+        gap: 20px;
+    }
+
+    .sign{
+        text-align: center;
+        width:80px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .sign-rock{
+        margin-left: 20px;
+        background-image: url(/img/rock.png);
+    }
+
+    .sign-scissors{
+        background-image: url(/img/scissors.png);
+    }
+
+    .sign-paper{
+        background-image: url(/img/Paper.png);
+    }
+
+    button{
+        height: 50px;
+        width:200px;
+    }
+
+    select{
+        margin-left: 20px;
+        width: 200px;
+        height: 50px;
+    }
+
+    .anounce{
+        margin-right: 20px;  
+        color: darkorchid;
+        font-size: 30px;   
+      }
+
+  
+  .left-box, .right-box{
+      width:500px;
+      height: 300px;
+      border: 3px solid black;
+      float:left;
+      background-color: bisque;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+
+  @media(max-width:650px){
+    .left-box, .right-box{
+        width: 290px;
+    }
+    .box-holder{
+        width:90vw;
+        min-width:0px;
+    }
+    .selector-holder{
+        width:90vw;
+        min-width:0px;
+        flex-direction: column-reverse;   
+    }
+    .button-holder{
+        width:90vw;
+        min-width:0px;    
+    }
+
+  }
+
+  @media(max-width:470px){
+.selector-holder>div{
+    display: flex;
+    flex-direction: column;
+}
+  }
+
+  .right-box{
+    float: right;
+}
+
+
+.closehand-l{
+margin-left: 50px;    
+transform-origin: top left;
+animation-name: handmotion-l;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+
+@keyframes handmotion-l {
+    0% {
+        transform: rotate(0deg);
+        transform-origin: top left;
+    }
+    25% {
+        transform: rotate(-10deg);
+        transform-origin: top left;
+    }
+    50% {
+        transform: rotate(0deg);
+        transform-origin: top left;
+    }
+    75% {
+        transform: rotate(10deg);
+        transform-origin: top left;
+    } 
+    100% {
+        transform: rotate(0deg);
+        transform-origin: top left;
+    }   
+
+}
+
+
+
+.closehand-r{
+    margin-right: 50px;
+    transform-origin: top right;
+    animation-name: handmotion-r; 
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes handmotion-r {
+    0% {
+        transform: rotate(0deg);
+        transform-origin: top right;
+    }
+    25% {
+        transform: rotate(-10deg);
+        transform-origin: top right;
+    }
+    50% {
+        transform: rotate(0deg);
+        transform-origin: top right;
+    }
+    75% {
+        transform: rotate(10deg);
+        transform-origin: top right;
+    } 
+    100% {
+        transform: rotate(0deg);
+        transform-origin: top right;
+    }   
+
+}
+  
+  .message-screen-holder{
+    color: darkorchid;
+    border: 1px double darkcyan;
+    width: 300px;
+    min-height: 150px;
+    text-align: center;
+
+  }
+
+  .message-screen{
+      font-size: 35px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+  }
+
+.bbcr{
+    margin-top: 10px;
+}
+
+  .noshow{
+      display:none;
+  }
