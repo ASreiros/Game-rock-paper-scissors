@@ -75,15 +75,15 @@ body {
 
     .sign-rock{
         margin-left: 20px;
-        background-image: url(/img/rock.png);
+        background-image: url(./img/rock.png);
     }
 
     .sign-scissors{
-        background-image: url(/img/scissors.png);
+        background-image: url(./img/scissors.png);
     }
 
     .sign-paper{
-        background-image: url(/img/Paper.png);
+        background-image: url(./img/Paper.png);
     }
 
     button{
