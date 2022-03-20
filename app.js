@@ -9,8 +9,8 @@ function gamestart() {
     bbs.classList.add("noshow");
     bbc.classList.remove("noshow");
     h3.innerHTML = "Choose your sign and press show"
-    rbox.innerHTML = `<img id="rhand" class="closehand-r" src="./img/Rock R.png" alt="closehand"></img>`
-    lbox.innerHTML = `<img id="lhand" class="closehand-l" src="./img/Rock L.png" alt="closehand"></img>`
+    rbox.innerHTML = `<img id="rhand" class="closehand-r hand" src="./img/Rock R.png" alt="closehand"></img>`
+    lbox.innerHTML = `<img id="lhand" class="closehand-l hand" src="./img/Rock L.png" alt="closehand"></img>`
     writestatistics()   
 }
 
@@ -18,8 +18,8 @@ function gamelost() {
     bbs.classList.remove("noshow");
     bbc.classList.add("noshow");
     victorypoints = 0;
-    rbox.innerHTML = `<img id="rhand" src="./img/Rock R.png" alt="closehand"></img>`
-    lbox.innerHTML = `<img id="lhand" src="./img/Rock L.png" alt="closehand"></img>`
+    rbox.innerHTML = `<img id="rhand" class="hand" src="./img/Rock R.png" alt="closehand"></img>`
+    lbox.innerHTML = `<img id="lhand" class="hand" src="./img/Rock L.png" alt="closehand"></img>`
     writestatistics()
     gamestart() 
 }
@@ -38,24 +38,24 @@ function writestatistics() {
 function showhand(a,o){
   switch (a) {
     case 0:
-    lbox.innerHTML = `<img id="lhand" src="./img/Rock L.png" alt="closehand"></img>`    
+    lbox.innerHTML = `<img id="lhand" class = "hand" src="./img/Rock L.png" alt="closehand"></img>`    
     break;
     case 1:
-    lbox.innerHTML = `<img id="lhand" src="./img/Scissors L.png" alt="two fingers"></img>`    
+    lbox.innerHTML = `<img id="lhand" class = "hand" src="./img/Scissors L.png" alt="two fingers"></img>`    
     break;
     case 2:
-    lbox.innerHTML = `<img id="lhand" src="./img/Paper L.png" alt="openhand"></img>`    
+    lbox.innerHTML = `<img id="lhand" class = "hand" src="./img/Paper L.png" alt="openhand"></img>`    
     break;
 }
 switch (o) {
     case 0:
-    rbox.innerHTML = `<img id="rhand" src="./img/Rock R.png" alt="closehand"></img>`    
+    rbox.innerHTML = `<img id="rhand" class="hand" src="./img/Rock R.png" alt="closehand"></img>`    
     break;
     case 1:
-    rbox.innerHTML = `<img id="rhand" src="./img/Scissors R.png" alt="two fingers"></img>`    
+    rbox.innerHTML = `<img id="rhand" class="hand" src="./img/Scissors R.png" alt="two fingers"></img>`    
     break;
     case 2:
-    rbox.innerHTML = `<img id="rhand" src="./img/Paper R.png" alt="openhand"></img>`    
+    rbox.innerHTML = `<img id="rhand" class="hand" src="./img/Paper R.png" alt="openhand"></img>`    
     break;
 }    
 

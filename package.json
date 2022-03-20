@@ -1,12 +1,24 @@
 {
   "name": "newcourse-04",
   "version": "1.0.0",
-  "description": "",
+  "description": "Small game created primarily to show my js skills.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "dead-server --port=3001 --host=localhost"
   },
   "keywords": [],
   "author": "Anton Sokolkin <ansokolkin@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ASreiros/Game-rock-pape-rscissors.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ASreiros/Game-rock-pape-rscissors/issues"
+  },
+  "homepage": "https://github.com/ASreiros/Game-rock-pape-rscissors#readme",
+  "devDependencies": {
+    "dead-server": "^1.0.6"
+  }
 }

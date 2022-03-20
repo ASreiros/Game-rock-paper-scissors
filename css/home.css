@@ -22,6 +22,7 @@ body {
   .firsttext{
       font-size: 50px;
       margin-bottom: 10px;
+      text-align: center;
   }
   
   .secondtext{
@@ -29,6 +30,7 @@ body {
   }
   
   .thirdtext{
+      text-align: center;
       font-size: 16px;
       margin: 10px; 
   }
@@ -36,8 +38,6 @@ body {
   
   .box-holder{
       width:80vw;
-      min-width: 600px;
-      min-height: 200px;
       background-color: rgb(145, 209, 71);
   }
 
@@ -98,6 +98,7 @@ body {
     }
 
     .anounce{
+        text-align: center;
         margin-right: 20px;  
         color: darkorchid;
         font-size: 30px;   
@@ -105,7 +106,7 @@ body {
 
   
   .left-box, .right-box{
-      width:500px;
+      width:50%;
       height: 300px;
       border: 3px solid black;
       float:left;
@@ -117,12 +118,8 @@ body {
 
 
   @media(max-width:650px){
-    .left-box, .right-box{
-        width: 290px;
-    }
     .box-holder{
         width:90vw;
-        min-width:0px;
     }
     .selector-holder{
         width:90vw;
@@ -136,25 +133,22 @@ body {
 
   }
 
-  @media(max-width:470px){
-.selector-holder>div{
-    display: flex;
-    flex-direction: column;
-}
-  }
 
   .right-box{
     float: right;
 }
 
 
-.closehand-l{
-margin-left: 50px;    
+.closehand-l{    
 transform-origin: top left;
 animation-name: handmotion-l;
 animation-duration: 2s;
 animation-iteration-count: infinite;
 animation-timing-function: linear;
+}
+
+.hand{
+    width:60%;
 }
 
 @keyframes handmotion-l {
@@ -171,7 +165,7 @@ animation-timing-function: linear;
         transform-origin: top left;
     }
     75% {
-        transform: rotate(10deg);
+        transform: rotate(9deg);
         transform-origin: top left;
     } 
     100% {
@@ -226,7 +220,7 @@ animation-timing-function: linear;
   }
 
   .message-screen{
-      font-size: 35px;
+      font-size: 2vw;
       font-weight: bold;
       text-transform: uppercase;
       margin-bottom: 10px;
